@@ -30,42 +30,42 @@
 
 ### 2.2. Cluster
 
+Nhóm 3 người, 9 candidate
+
 | Cluster | Các candidate | Pattern chung |
 |---|---|---|
-| A | | |
-| B | | |
-| C | | |
+| A - Tìm hiểu thông tin | **Problem #1** (trả lời câu hỏi thường gặp) </br>**Problem #2** (tìm thông tin trong nhiều tài liệu nội bộ)</br> **Problem #4** (hiểu nhanh dự án mới) </br>**Problem #7** (tìm quán ăn hợp ngân sách) | Cần tìm và hiểu đúng thông tin nằm rải rác trong nhiều nguồn |
+| B - Tổng hợp / nhập liệu | **Problem #3** (tổng hợp khó khăn của khách hàng) </br>**Problem #8** (tổng hợp tiến độ dev team) </br>**Problem #9** (nhập tiến độ một lần) | Gom hoặc nhập thông tin ở nhiều nơi rồi viết lại cho người khác đọc |
+| C - Kiểm tra | **Problem #5** (bắt lỗi convention trước review) </br>**Problem #6** (khoanh vùng lỗi từ bug report) | Đọc code hoặc log và chỉ ra chỗ có vấn đề trước khi người có chuyên môn phải vào xem |
 
 ### 2.3. Opportunity Solution Tree rút gọn
-
-Gốc là **1 outcome**. Nhánh là **opportunity** (nhu cầu, pain), không phải tính năng hay công cụ.
 
 ```text
 OUTCOME: Giảm thời gian dev mới cần để hiểu công ty và dự án trước khi bắt đầu xử lý công việc
 ├── Opportunity A: Dev mới mất thời gian tìm thông tin vì tài liệu nằm rải rác ở nhiều nơi
 ├── Opportunity B: Dev mới khó biết tài liệu nào đầy đủ, mới nhất và đáng tin cậy
 └── Opportunity C: Khi thiếu thông tin, dev mới khó biết cần hỏi ai và phải tự lần theo code
+    ✗ "AI tự sinh bản mô tả dự án từ code"   ← solution, gạch khỏi tầng này
+    ✗ "Chatbot trả lời câu hỏi về dự án"     ← solution, gạch khỏi tầng này
 ```
 
 Những ý đã gạch bỏ vì là solution đội lốt opportunity:
-
--
+- “AI tự sinh bản mô tả dự án từ code”: đây là cách giải quyết, không phải nhu cầu của dev mới.
+- “Chatbot trả lời câu hỏi về dự án”: cũng là công cụ, không phải pain.
 
 ### 2.4. Chấm điểm shortlist (1–5)
 
 | Candidate | Actor rõ | Quy trình rõ | Pain có bằng chứng | Impact đo được | Vừa sức lab | So sánh được No AI/Rule/Workflow/Agent | Nhóm hiểu domain | Tổng |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
+| Problem #4 - Dev mới hiểu dự án | 5 | 3 | 5 | 4 | 5 | 5 | 5 | 32 |
+| Problem #8 - Tổng hợp tiến độ dev team | 5 | 4 | 3 | 4 | 4 | 5 | 5 | 30 |
+| Problem #6 - Khoanh vùng lỗi | 3 | 4 | 3 | 4 | 4 | 3 | 5 | 26 |
 
-**Candidate được chọn:**
+**Candidate được chọn:** Problem #4 - Dev mới vào dự án chưa có tài liệu, cần bản mô tả dự án để hiểu nhanh thay vì đọc code cả tuần.
 
-**Vì sao chọn:**
+**Vì sao chọn:** Actor rõ ràng, khảo sát thực tế đo nhanh chóng, xác nhận các Dev mới khảo sát luôn luôn gặp phải vấn đề này
 
-**Vì sao loại các candidate còn lại:**
-
-**Xử lý bất đồng (nếu có):**
+**Vì sao loại các candidate còn lại:** Các tiêu chí quan trọng như bằng chứng về pain và khả năng đo impact, nên chưa phải lựa chọn tối ưu. Hai bài này vẫn có giá trị và có thể đưa vào mục “hướng tiếp theo”.
 
 ---
 
@@ -288,10 +288,8 @@ Vì sao: Vì để hiểu 1 dự án, người mới cần phải đọc rất n
 
 ## 9. Hạn chế và hướng tiếp theo
 
--Khảo sát mới có 24 người, trong đó 7 người đã đi làm xác nhận gặp vấn đề này
--Chưa kiểm chứng mục tiêu dùng AI có giúp giảm thời gian tìm hiểu xuống dưới 2 tiếng mà vẫn đảm bảo dev hiểu đúng feature hay không
--phỏng vấn thêm dev mới, bấm giờ quy trình hiện tại và thử nghiệm trên một feature nhỏ
+- Khảo sát mới có 24 người kể cả đã đi làm và đang học, trong đó 7 người đã đi làm xác nhận gặp vấn đề này
+- Chưa kiểm chứng mục tiêu dùng AI có giúp giảm thời gian tìm hiểu xuống dưới 2 tiếng mà vẫn đảm bảo dev hiểu đúng feature hay không
+- Problem #8 - Tổng hợp tiến độ dev team + Problem #6 - Khoanh vùng lỗi là 2 candidates tiềm năng cho hướng tiếp theo
 
 ## 10. Tài liệu tham khảo
-
--
