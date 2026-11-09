@@ -78,16 +78,14 @@ Những ý đã gạch bỏ vì là solution đội lốt opportunity:
 
 | # | Giả định | Loại (Value / Usability / Feasibility / Viability) | Quan trọng (1–5) | Đã có bằng chứng (1–5) | Kiểm chứng trước? |
 |---:|---|---|---:|---:|---|
-| 1 | | | | | |
-| 2 | | | | | |
-| 3 | | | | | |
-| 4 | | | | | |
-| 5 | | | | | |
-| 6 | | | | | |
+| 1 | dev mới thường mất nhiều thời gian để tìm hiểu cấu trúc và các vận hành hệ thống | value | 5 | 2 | có |
+| 2 | thông tin thường được rải trong nhiều tài liệu | value | 4 | 3 | có |
+| 3 | thời gian kéo dài do khó tìm thông tin | value | 4 | 2 | có |
+| 4 | sử dụng ai để tra cứu dữ liệu nội bộ |Viability| 5 | 1 |- |
 
 *Điền 4–6 giả định; xóa dòng thừa.*
 
-Giả định nhóm kiểm chứng trong buổi này:
+Giả định nhóm kiểm chứng trong buổi này:dev mới mất nhiều thời gian tìm hiểu hệ thống vì thông tin nằm rải rác; khó khăn chính là tìm đúng thông tin, và một nơi tra cứu tập trung có thể giúp họ tìm câu trả lời nhanh hơn
 
 ### 3.2. Kiểm chứng
 
