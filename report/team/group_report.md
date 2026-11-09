@@ -166,9 +166,9 @@ Ghi rõ bước nào **Rule**, bước nào **AI**, bước nào **con người*
 
 | Trường | Nội dung |
 |---|---|
-| **Actor** | |
-| **Quy trình** | |
-| **Bottleneck** | |
+| **Actor** | Dev mới đọc và tìm hiểu tài liệu project trước khi làm features |
+| **Quy trình** | Các phần đọc & tìm hiểu: Kiến trúc -> Code of conduct -> Convention -> Feature -> Related Feature |
+| **Bottleneck** |  |
 | **Impact** | |
 | **Success Metric** (baseline → target, cách đo) | |
 | **Boundary** (AI không được làm gì; khi nào cần con người kiểm tra — HITL) | |
