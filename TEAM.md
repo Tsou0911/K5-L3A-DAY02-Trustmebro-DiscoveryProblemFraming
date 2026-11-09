@@ -12,8 +12,9 @@
 
 | STT | Họ và tên | MSSV | Vai trò trong nhóm | Tài khoản GitHub |
 |---:|---|---|---|---|
+
 | 1 |Lê Hữu Toàn | 2A202603660| |Tsou911 |
-| 2 | | | | |
+| 2 |Trần Việt Thịnh |2A202603661 |Phụ trách research, viết problem statement |ThinhTran-codee |
 | 3 | | | | |
 | 4 | | | | |
 
