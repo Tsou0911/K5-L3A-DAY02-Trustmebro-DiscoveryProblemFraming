@@ -5,14 +5,14 @@
 ## Thông tin nhóm
 
 - Tên nhóm:Trustmebro
-- Candidate problem nhóm chọn (1 câu):
+- Candidate problem nhóm chọn (1 câu):Dev mới mất nhiều thời gian tìm hiểu hệ thống của công ty vì tài liệu có thể thiếu hoặc không tồn tại. Họ phải tự lần mò đọc mã nguồn hoặc hỏi đồng nghiệp, nhưng câu trả lời không phải lúc nào cũng đầy đủ, khiến quá trình làm việc chậm hơn
 - Quyết định cuối (Go / Not Yet / No-Go):
 
 ## Thành viên
 
 | STT | Họ và tên | MSSV | Vai trò trong nhóm | Tài khoản GitHub |
 |---:|---|---|---|---|
-| 1 | | | | |
+| 1 |Lê Hữu Toàn | 2A202603660| |Tsou911 |
 | 2 | | | | |
 | 3 | | | | |
 | 4 | | | | |
