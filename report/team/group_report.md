@@ -21,12 +21,12 @@
 | 1 | Lê hữu Toàn | Khi nhận câu hỏi thường gặp từ khách hàng tôi muốn tôi muốn trả lời nhanh và đúng thông tin, để khách hàng sớm đc giải quyết vấn đề | Nhân viên hỗ trợ, khách hàng | lặp lại | |
 | 2 | Lê hữu Toàn | Khi cần thông tin trong nhiều tài liệu nội bộ, tôi muốn tìm được câu trả lời nhanh chóng để không bị mất nhiều thời gian | Nhân viên mới, nhân viên vận hành | Cần đọc, tổng hợp nhiều thông tin | |
 | 3 | Lê hữu Toàn | khi chuẩn bị cải thiện sản phẩm, tôi muốn hiểu khách hàng đang gặp khó khăn gì để đề xuất giải quyết đúng yêu cầu | Nhóm hỗ trợ, nhóm sản phẩm | Cần đọc, tổng hợp nhiều thông tin | |
-| 4 | Vũ Lê Đức | Trong khoảng 2 tuần đầu tại nơi thuê, tôi muốn tìm quán ăn hợp ngân sách và gần chỗ ở, để không chi vượt kỳ vọng hay phải đi xa | Sinh viên | Thiếu thông tin giá và khoảng cách thật khi chọn | (Lê Hữu Toàn) Tại sao không sử dụng Google Map để tìm kiếm? |
-| 5 | Vũ Lê Đức | Khi tới 9h sáng Thứ Ba, Non-tech Manager muốn tổng hợp tiến độ của Dev Team từ tất cả file report, để báo cáo lên Technical Manager đầy đủ và đúng giờ | Non-tech Manager, Technical Manager | Chờ dev bổ sung, khoảng 15p và trong lúc report phải check nhiều file | (Trần Viết Thịnh) Mốc thời gian chưa rõ là khi nào thì Non-tech Manager biết để tôngt hợp tiến độ của Dev Team? |
-| 6 | Vũ Lê Đức | Khi cập nhật tiến độ, tôi muốn chỉ nhập một lần, để không phải viết lại ở Jira, file report và chat, và báo cáo không bị thiếu hoặc lệch | Dev, Non-Tech Manager | Cùng một lúc phải nhập 3 nơi để file report | |
-| 7 | | | | | |
-| 8 | | | | | |
-| 9 | | | | | |
+| 4 | Trần Việt Thịnh |Khi vào dự án mới chưa có tài liệu, tôi muốn có bản mô tả dự án để hiểu nhanh, thay vì đọc code cả tuần |Develop mới |Đọc code để hiểu cấu trúc, ~1 tuần |AI không biết “vì sao thiết kế như vậy”, vậy có đủ giúp người mới không? |
+| 5 | Trần Việt Thịnh |Khi đẩy code lên dev, tôi muốn lỗi convention/format được bắt trước, để Tech Lead chỉ review logic |Developer, Tech Lead |Chờ review và Tech Lead tốn thời gian vào lỗi cơ bản, release 2 tuần thành cả tháng |Linter đã bắt được lỗi format, vậy cần AI để làm gì? |
+| 6 | Trần Việt Thịnh |Khi nhận bug report rời rạc, tôi muốn khoanh vùng nhanh chỗ lỗi trong code, để khỏi lần mò qua nhiều file |Developer, QA |Đọc log và lần theo code qua nhiều file |Con số 1-3 giờ mỗi bug lấy ở đâu ra, thực tế đo được bao nhiêu? |
+| 7 | Vũ Lê Đức | Trong khoảng 2 tuần đầu tại nơi thuê, tôi muốn tìm quán ăn hợp ngân sách và gần chỗ ở, để không chi vượt kỳ vọng hay phải đi xa | Sinh viên | Thiếu thông tin giá và khoảng cách thật khi chọn | (Lê Hữu Toàn) Tại sao không sử dụng Google Map để tìm kiếm? |
+| 8 | Vũ Lê Đức | Khi tới 9h sáng Thứ Ba, Non-tech Manager muốn tổng hợp tiến độ của Dev Team từ tất cả file report, để báo cáo lên Technical Manager đầy đủ và đúng giờ | Non-tech Manager, Technical Manager | Chờ dev bổ sung, khoảng 15p và trong lúc report phải check nhiều file | (Trần Việt Thịnh) Mốc thời gian chưa rõ là khi nào thì Non-tech Manager biết để tôngt hợp tiến độ của Dev Team? |
+| 9 | Vũ Lê Đức | Khi cập nhật tiến độ, tôi muốn chỉ nhập một lần, để không phải viết lại ở Jira, file report và chat, và báo cáo không bị thiếu hoặc lệch | Dev, Non-Tech Manager | Cùng một lúc phải nhập 3 nơi để file report | |
 
 ### 2.2. Cluster
 
@@ -111,9 +111,9 @@ Tổng hợp:
 
 | Công cụ / case / pattern | Link | Giải bước nào trong quy trình? | Điểm mạnh | Khoảng trống / rủi ro | Bài học cho nhóm |
 |---|---|---|---|---|---|
-| | | | | | |
-| | | | | | |
-| | | | | | |
+|DeepWiki(Cognition, nhà làm Devin) |https://deepwiki.com/ |Hiểu bức tranh tổng thể ngay ngày đầu, khi chưa có tài liệu nào. Chỉ cần thay github.com bằng deepwiki.com trong URL là có tóm tắt dự án, tech stack, sơ đồ kiến trúc và hỏi đáp |Repo public miễn phí, repo private cần trả phí |Giữ index luôn mới tốn nhiều compute. Devin cập nhật index theo từng commit cho người dùng trả phí, còn bản miễn phí dùng cách tiết kiệm hơn. Tức là wiki có thể lệch so với code hiện tại. |tài liệu tự sinh giải quyết tốt bài toán “không có gì để đọc”. Nhưng với repo private thì phải trả phí, và độ mới của nội dung là điểm cần kiểm chứng trước khi tin. |
+|Google Code Wiki |https://developers.googleblog.com/introducing-code-wiki-accelerating-your-code-understanding/ |Hiểu tổng thể, giữ tài liệu không bị cũ, và tra cứu từ khái niệm xuống đúng file. |Code Wiki quét toàn bộ codebase và sinh lại tài liệu sau mỗi thay đổi. Có sinh sơ đồ kiến trúc, class và sequence luôn khớp với code hiện tại. |Bản ra mắt chỉ nhận repo public.Các tuyên bố “luôn đúng, không bao giờ cũ” là lời của nhà cung cấp. Chưa thấy đo độ chính xác độc lập. |Hướng đi đúng là tài liệu phải sinh ra từ code, không phụ thuộc người viết. Nhưng với startup có repo private thì phải kiểm tra điều kiện sử dụng trước. |
+|ADR (Architecture Decision Records), giải pháp thủ công |https://www.martinfowler.com/bliki/ArchitectureDecisionRecord.html |Hiểu vì sao hệ thống như hiện tại, phần AI sinh từ code gần như không làm được. |Kỹ thuật này ghi lại các quyết định quan trọng cùng bối cảnh và hệ quả, là tư liệu cho thành viên tương lai. |Cần kỷ luật của cả team và phải bắt đầu ngay từ bây giờ. Nó không cứu được quá khứ chưa ghi chép. |ADR lấp đúng chỗ các công cụ AI để trống, nhưng nó phải được viết bởi người trong cuộc. |
 
 ---
 
@@ -193,18 +193,18 @@ Phản biện nhận được từ AI và nhóm có đồng ý không:
 
 ### 6.1. Ma trận độ mơ hồ × độ phức tạp
 
-Bài của nhóm nằm ở ô:
+Bài của nhóm nằm ở ô: Độ mơ hồ thấp(đầu vào, đầu ra rõ ràng, có thể kiểm chứng) và độ phức tạp cao(AI soạn tài liệu, người trong team duyệt và bổ sung)
 
-Vì sao:
+Vì sao: Vì để hiểu 1 dự án, người mới cần phải đọc rất nhiều file, modules. Phần code này là gì, module này là module nào. 
 
 ### 6.2. So sánh 4 mức
 
 | Mức | Phương án cho bài của nhóm | Đủ khi nào | Rủi ro | Chọn? |
 |---|---|---|---|---|
-| **No AI** (sửa quy trình) | | | | |
-| **Rule** | | | | |
-| **Workflow** | | | | |
-| **Agent** | | | | |
+| **No AI** (sửa quy trình) |Mỗi PR mới phải có 1 README. |Codebase nhỏ, ít thay đổi |Giống vấn đề ban đầu, do không có nên không ai làm |Không chọn |
+| **Rule** |Script kiểm tra cố định các module, endpoint, báo lỗi nếu PR có thay đổi code nhưng tài liệu không đổi |Cần bộ khung thông tin cấu trúc cố định, chính xác |Không giải thích được code, con người vẫn phải tự mở code và đọc |Không chọn |
+| **Workflow** |Mỗi khi merge thì đọc lại repo -> AI tạo bản draft -> Tech Lead approved -> Confirm merge |Cần tài liệu đủ tốt mà không có từ đầu |AI có thể mô tả sai, lệch so với code ban đầu(Cần người kiểm tra) |Chọn |
+| **Agent** |AI agent tự tìm hiểu repo, tự cập nhật tài liệu, có thể tự sử docs |Có sẵn tài liệu nền |Vì được tự quyết định nên con người khó kiểm soát, có thể trả lời sai nhưng rất tự tin vì rất khó để ngăn cản Hallucination |Không chọn lúc này vì chưa có tài liệu sẵn |
 
 **Mức chọn:**
 
@@ -214,17 +214,17 @@ Vì sao:
 
 | Thành phần | Nội dung |
 |---|---|
-| **Prediction** — AI dự đoán / tạo ra gì? | |
-| **Judgment** — con người cân nhắc, quyết định gì? | |
-| **Action** — hành động cuối cùng là gì, ai làm? | |
-| **Outcome** — đo kết quả bằng gì? | |
-| **Input** — AI cần dữ liệu đầu vào gì mỗi lần chạy? Có sẵn không? | |
-| **Feedback** — lấy phản hồi ở đâu để cải thiện? | |
+| **Prediction** — AI dự đoán / tạo ra gì? |Bản nháp tài liệu từ code: tổng quan, kiến trúc, cách chạy, component dùng chung |
+| **Judgment** — con người cân nhắc, quyết định gì? |Người duyệt kiểm tra bản tài liệu xem có đúng với code không, sửa chỗ sai, bổ sung phần AI không biết |
+| **Action** — hành động cuối cùng là gì, ai làm? |Người duyệt sửa và commit vào repo, những người sau có thể đọc và làm theo. Chưa duyệt thì không public |
+| **Outcome** — đo kết quả bằng gì? |Số ngày người mới làm được task đầu tiên |
+| **Input** — AI cần dữ liệu đầu vào gì mỗi lần chạy? Có sẵn không? |Có sẵn: source code, README. |
+| **Feedback** — lấy phản hồi ở đâu để cải thiện? |Người mới sau tuần đầu, chỗ người duyệt phải sửa nhiều nhất, câu hỏi lặp lại. |
 
 ### 6.4. Hai câu hỏi của Google PAIR
 
-- Người dùng muốn **được hỗ trợ (augment)** hay **giao hẳn việc (automate)**? Bằng chứng:
-- AI sai kiểu nào tệ hơn, **báo nhầm** hay **bỏ sót**? Vì sao, và thiết kế đã xử lý thế nào:
+- Người dùng muốn **được hỗ trợ (augment)** hay **giao hẳn việc (automate)**? Bằng chứng: Augment(Theo nhóm đi khảo sát thì người mới phải mất khoảng 1 tuần đọc code, nhưng vẫn cần người cũ giải thích "vì sao thiết kế như vậy" - phần này không nằm trong code nên AI không thể tự làm được)
+- AI sai kiểu nào tệ hơn, **báo nhầm** hay **bỏ sót**? Vì sao, và thiết kế đã xử lý thế nào:Báo nhầm tệ hơn (Vì người mới sẽ tin và làm theo thông tin sai sẽ mất thời gian thêm để debug, mất niềm tin vào tài liệu. Còn thiếu thông tin thì có thể hỏi người cũ)
 
 ---
 
@@ -265,24 +265,24 @@ Vì sao:
 
 | Rủi ro | Câu hỏi | Mức độ rủi ro (Thấp = an toàn / TB / Cao = nguy hiểm) | Lý do / bằng chứng |
 |---|---|---|---|
-| **Value** | Người dùng có thật sự cần và sẽ dùng không? | | |
-| **Usability** | Người dùng có dùng được, có hiểu và sửa được đầu ra của AI không? | | |
-| **Feasibility** | Có đủ dữ liệu, công cụ, kỹ năng để làm không? | | |
-| **Viability** | Có hợp chi phí, pháp lý, quy định tổ chức không? Ai vận hành? | | |
+| **Value** | Người dùng có thật sự cần và sẽ dùng không? |Thấp |Người mới mất ~1 tuần đọc code, chưa có tài liệu thay thế |
+| **Usability** | Người dùng có dùng được, có hiểu và sửa được đầu ra của AI không? |TB |File markdown có thể sửa được, nhưng dễ tin mù nếu không gắn nhãn "Do AI làm" |
+| **Feasibility** | Có đủ dữ liệu, công cụ, kỹ năng để làm không? |TB |Có sữan code và công cụ tương tự, nhưng thiếu phần "vì sao thiết kế", chưa thử trên repo thật |
+| **Viability** | Có hợp chi phí, pháp lý, quy định tổ chức không? Ai vận hành? |Cao |Chưa rõ công ty có cho phép đưa code private cho AI xem không |
 
 ### 8.2. Kết luận
 
-**Quyết định:** Go / Not Yet / No-Go
+**Quyết định:**  Chọn Not Yet
 
-**Lý do:**
+**Lý do:** Value thấp nhưng viability đang cao, chưa rõ công ty có đưa code cho AI xem không. Nhóm cũng chưa thử trên repo thật nên chưa biết độ chính xác
 
-**Nếu Go — pilot nhỏ nhất:**
+**Nếu Go — pilot nhỏ nhất:** Chạy thử trên 1 repo, AI sinh bản nháp, developer duyệt, cho 1 người mới đọc trong 1 tuần
 
-**Nếu Not Yet — cần kiểm chứng gì trước:**
+**Nếu Not Yet — cần kiểm chứng gì trước:** Công ty có cho đưa code lên AI không, ai là người duyệt, thử 1 module xem đúng bao nhiêu % so với code
 
-**Nếu No-Go — nên làm gì thay AI:**
+**Nếu No-Go — nên làm gì thay AI:** Viết tay 1 trang onboard theo template, ghi ADR cho quyết định mới
 
-**Ngưỡng dừng** (nếu sau … mà … thì quay về …):
+**Ngưỡng dừng** (nếu sau … mà … thì quay về …): Nếu sau pilot mà tỷ lệ câu bị sửa hoặc xoá sai trên 30% thì quay về phương án No-Go
 
 ---
 
