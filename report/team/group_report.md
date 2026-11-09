@@ -89,24 +89,24 @@ Giả định nhóm kiểm chứng trong buổi này:dev mới mất nhiều th�
 
 ### 3.2. Kiểm chứng
 
-Cách đã dùng: Phỏng vấn / Survey / Log, ticket, review
+Cách đã dùng: Khảo sát trực tiếp bằng cách đặt câu hỏi cho các nhóm
 
 Interview snapshot (mỗi buổi phỏng vấn một bảng, hoặc đặt file trong `report/assets/cp4-interview-snapshot-N.md`):
 
 | Trường | Nội dung |
 |---|---|
-| Người được hỏi (vai trò, không ghi tên thật) | |
-| Câu nói đáng nhớ nhất (nguyên văn) | |
-| Lần gần nhất gặp vấn đề này: chuyện gì đã xảy ra? | |
-| Hiện đang xử lý bằng cách nào (workaround)? | |
-| Mất bao lâu, bao lần? | |
-| Insight / opportunity rút ra | |
+| Người được hỏi | Các bạn dev đã bắt đầu đi làm |
+| Câu nói đáng nhớ nhất | "Nhiều nhất 1 tháng 3 lần phải đọc các tài liệu liên quan đến features" |
+| Lần gần nhất gặp vấn đề này | 5 tháng trước, đọc lại source mất khoảng 1 buổi (4 tiếng) |
+| Hiện đang xử lý bằng cách nào | Hỏi lại người trước về flow và đọc thêm tài liệu liên quan đến features đang làm |
+| Mất bao lâu, bao lần | Tìm hiểu ít nhất 1 buổi (4 tiếng), tuỳ theo tháng, nhiều nhất là 3 lần 1 tháng |
+| Insight | Pain target đúng được features đang làm và các phần liên đới, không phải toàn bộ codebase của project |
 
 Tổng hợp:
 
-| Nguồn | Số người / số mẫu | Tín hiệu xác nhận | Tín hiệu phản bác |
+| Nguồn | Số người - Số nhóm | Tín hiệu xác nhận | Tín hiệu phản bác |
 |---|---:|---|---|
-| | | | |
+| Khảo sát | 24 - 4 | 7/24 người đã từng đi làm đều gặp phải việc mất thời gian đọc và tìm hiểu cho features đang làm | - |
 
 **Nhóm đã sửa problem thế nào sau kiểm chứng:**
 
@@ -164,9 +164,9 @@ Ghi rõ bước nào **Rule**, bước nào **AI**, bước nào **con người*
 
 | Trường | Nội dung |
 |---|---|
-| **Actor** | |
-| **Quy trình** | |
-| **Bottleneck** | |
+| **Actor** | Dev mới đọc và tìm hiểu tài liệu project trước khi làm features |
+| **Quy trình** | Các phần đọc & tìm hiểu: Kiến trúc -> Code of conduct -> Convention -> Feature -> Related Feature |
+| **Bottleneck** |  |
 | **Impact** | |
 | **Success Metric** (baseline → target, cách đo) | |
 | **Boundary** (AI không được làm gì; khi nào cần con người kiểm tra — HITL) | |
