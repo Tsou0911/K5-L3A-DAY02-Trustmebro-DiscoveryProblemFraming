@@ -61,9 +61,7 @@ Lăng kính: **Lặp lại** · **Tốn thời gian** · **Cần đọc, tổng 
 
 Quy trình nháp hiện tại:
 
-```Vào team → Chạy được dự án → Đọc code → Hỏi người cũ → Ghi chú cá nhân → Làm tính năng (quay lại đọc code).
-
-```
+Vào team → Chạy được dự án → Đọc code → Hỏi người cũ → Ghi chú cá nhân → Làm tính năng (quay lại đọc code).
 
 ### Problem Card #2
 
@@ -82,9 +80,7 @@ Quy trình nháp hiện tại:
 
 Quy trình nháp hiện tại:
 
-```Code xong → Đẩy lên môi trường dev → Chờ Tech Lead review → Tech Lead review (cả convention lẫn logic) → Dev sửa theo comment → Review lại → Approve → Deploy production
-
-```
+Code xong → Đẩy lên môi trường dev → Chờ Tech Lead review → Tech Lead review (cả convention lẫn logic) → Dev sửa theo comment → Review lại → Approve → Deploy production
 
 ### Problem Card #3
 
@@ -102,10 +98,7 @@ Quy trình nháp hiện tại:
 | Cảm nhận nhanh | Workflow |
 
 Quy trình nháp hiện tại:
-
-```Nhận bug report → Hỏi lại QA bước tái hiện → Tự tái hiện lỗi → Đọc log, lần theo code → Xác định chỗ lỗi → Sửa và test
-
-```
+Nhận bug report → Hỏi lại QA bước tái hiện → Tự tái hiện lỗi → Đọc log, lần theo code → Xác định chỗ lỗi → Sửa và test
 
 ### Card muốn pitch nhất
 
