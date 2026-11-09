@@ -127,16 +127,24 @@ Tổng hợp:
 Sơ đồ (ASCII, Mermaid hoặc link ảnh trong `report/assets/`):
 
 ```text
+HIỆN TẠI — khoảng 4 tiếng/lần tìm hiểu feature
+
+[1 Nhận task, xác định phần cần tìm hiểu: 15']
+→ [2 Đọc kiến trúc và quy ước dự án: 45']
+→ [3 Tìm tài liệu về feature: 60']
+→ [4 Đọc code và lần theo feature liên quan: 90'] ← BOTTLENECK
+→ [5 Hỏi đồng nghiệp, xác nhận cách hiểu: 30']
+
 
 ```
 
 | Bước | Actor | Input | Output | Thời gian / tần suất | Ghi chú |
 |---:|---|---|---|---|---|
-| 1 | | | | | |
-| 2 | | | | | |
-| 3 | | | | | |
-| 4 | | | | | |
-| 5 | | | | | |
+| 1 |Dev mới |Task được giao|Xác định feature cần tìm hiểu |Ước tính 15 phút |Xác định phạm vi cần đọc |
+| 2 | Dev mới|Tài liệu dự án |Hiểu kiến trúc và quy ước cơ bản |Ước tính 45 phút |Tài liệu có thể thiếu |
+| 3 |Dev mới |Tên feature, tài liệu liên quan |Thông tin ban đầu về feature | Ước tính 60 phút|Khó biết tài liệu nào liên quan |
+| 4 |Dev mới |Mã nguồn, feature liên quan |Hiểu flow và các phần liên đới |Ước tính 90 phút |Phải tự lần theo code |
+| 5 |Dev mới |Câu hỏi chưa rõ |Xác nhận cách hiểu |Ước tính 30 phút |Có thể phải chờ lead |
 
 **Bottleneck chính:**
 
@@ -145,18 +153,24 @@ Sơ đồ (ASCII, Mermaid hoặc link ảnh trong `report/assets/`):
 Ghi rõ bước nào **Rule**, bước nào **AI**, bước nào **con người**, **boundary** ở đâu, **phương án quay về** khi AI sai.
 
 ```text
+TƯƠNG LAI — mục tiêu dưới 2 tiếng/lần tìm hiểu
 
+[1 Dev nhập tên feature và câu hỏi: 5']               ← CON NGƯỜI
+→ [2 Tìm tài liệu và code liên quan: 10']             ← RULE
+→ [3 Tóm tắt flow, kiến trúc và liên kết nguồn: 10']  ← AI
+→ [4 Dev kiểm tra nguồn, hỏi người hướng dẫn nếu thiếu: 30'] ← CON NGƯỜI
+→ [5 Dev đọc sâu phần liên quan và bắt đầu task: 60'] ← CON NGƯỜI
 ```
 
 ### 4.3. Before / after
 
 | Chỉ số | Trước | Sau (kỳ vọng) | Ghi chú |
 |---|---:|---:|---|
-| Số bước | | | |
-| Tổng thời gian | | | |
-| Số bước thủ công | | | |
-| Bottleneck chính | | | |
-| Rủi ro mới phát sinh | | | |
+| Số bước |5 |5 |Một số bước tìm và tổng hợp được hỗ trợ |
+| Tổng thời gian |Khoảng 4 tiếng	 |Dưới 2 tiếng	 | |
+| Số bước thủ công | 5/5|3/5 |Dev vẫn kiểm chứng và đọc phần code cần thiết |
+| Bottleneck chính |Tự tìm và lần theo code feature liên quan |Dev kiểm tra độ phù hợp của nguồn và tóm tắt |Cần xác nhận nguồn trước khi áp dụng |
+| Rủi ro mới phát sinh | |AI bỏ sót hoặc diễn giải sai flow |dev kiểm tra và hỏi người hướng dẫn khi chưa chắc chắn|
 
 ---
 
@@ -275,7 +289,9 @@ Vì sao: Vì để hiểu 1 dự án, người mới cần phải đọc rất n
 
 ## 9. Hạn chế và hướng tiếp theo
 
--
+-Khảo sát mới có 24 người, trong đó 7 người đã đi làm xác nhận gặp vấn đề này
+-Chưa kiểm chứng mục tiêu dùng AI có giúp giảm thời gian tìm hiểu xuống dưới 2 tiếng mà vẫn đảm bảo dev hiểu đúng feature hay không
+-phỏng vấn thêm dev mới, bấm giờ quy trình hiện tại và thử nghiệm trên một feature nhỏ
 
 ## 10. Tài liệu tham khảo
 
