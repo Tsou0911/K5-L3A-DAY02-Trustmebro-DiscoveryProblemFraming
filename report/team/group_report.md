@@ -18,9 +18,9 @@
 
 | # | Người đưa ra | Candidate (Job Story ngắn) | Actor | Bottleneck | Câu hỏi phản biện nhận được (ai hỏi) |
 |---:|---|---|---|---|---|
-| 1 | Lê hữu Toàn | Khi nhận câu hỏi thường gặp từ khách hàng tôi muốn tôi muốn trả lời nhanh và đúng thông tin, để khách hàng sớm đc giải quyết vấn đề | Nhân viên hỗ trợ, khách hàng | lặp lại | tần suất câu hỏi xuất hiện 1 ngày?  |
-| 2 | Lê hữu Toàn | Khi cần thông tin trong nhiều tài liệu nội bộ, tôi muốn tìm được câu trả lời nhanh chóng để không bị mất nhiều thời gian | Nhân viên mới, nhân viên vận hành | Cần đọc, tổng hợp nhiều thông tin |Nhân viên thường mất bao lâu để tìm thông tin, và tài liệu nào khó tra cứu nhất? |
-| 3 | Lê hữu Toàn | khi chuẩn bị cải thiện sản phẩm, tôi muốn hiểu khách hàng đang gặp khó khăn gì để đề xuất giải quyết đúng yêu cầu | Nhóm hỗ trợ, nhóm sản phẩm | Cần đọc, tổng hợp nhiều thông tin |Nhóm đang lấy phản hồi từ những nguồn nào, và hiện dựa vào đâu để chọn vấn đề cần ưu tiên? |
+| 1 | Lê hữu Toàn | Khi nhận câu hỏi thường gặp từ khách hàng tôi muốn tôi muốn trả lời nhanh và đúng thông tin, để khách hàng sớm đc giải quyết vấn đề | Nhân viên hỗ trợ, khách hàng | Nhân viên phải tìm lại thông tin và tự soạn câu trả lời cho các câu hỏi lặp lại | 	Câu hỏi lặp lại có thật sự gây ảnh hưởng lớn không, hay chỉ làm nhân viên mất vài phút? Có bằng chứng về số lượng và tổng thời gian mỗi tuần không?  |
+| 2 | Lê hữu Toàn | Khi cần thông tin trong nhiều tài liệu nội bộ, tôi muốn tìm được câu trả lời nhanh chóng để không bị mất nhiều thời gian | Nhân viên mới, nhân viên vận hành | Thông tin nằm rải rác trong nhiều tài liệu nên khó tìm đúng câu trả lời nhanh chóng |Đây là vấn đề thiếu công cụ tìm kiếm hay tài liệu nội bộ vốn thiếu, cũ và mâu thuẫn? Nếu câu trả lời không có trong tài liệu thì giải pháp có giúp được không? |
+| 3 | Lê hữu Toàn | khi chuẩn bị cải thiện sản phẩm, tôi muốn hiểu khách hàng đang gặp khó khăn gì để đề xuất giải quyết đúng yêu cầu | Nhóm hỗ trợ, nhóm sản phẩm | Phải đọc và tự tổng hợp nhiều phản hồi để nhận ra vấn đề khách hàng thường gặp |	Làm sao biết vấn đề khách hàng được nhắc nhiều nhất cũng là vấn đề quan trọng nhất? Nhóm có phân biệt tần suất phản hồi với mức độ ảnh hưởng không? |
 | 4 | | | | | |
 | 5 | | | | | |
 | 6 | | | | | |
