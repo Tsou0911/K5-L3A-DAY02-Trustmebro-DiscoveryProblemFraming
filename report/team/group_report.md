@@ -266,24 +266,24 @@ Vì sao:
 
 | Rủi ro | Câu hỏi | Mức độ rủi ro (Thấp = an toàn / TB / Cao = nguy hiểm) | Lý do / bằng chứng |
 |---|---|---|---|
-| **Value** | Người dùng có thật sự cần và sẽ dùng không? | | |
-| **Usability** | Người dùng có dùng được, có hiểu và sửa được đầu ra của AI không? | | |
-| **Feasibility** | Có đủ dữ liệu, công cụ, kỹ năng để làm không? | | |
-| **Viability** | Có hợp chi phí, pháp lý, quy định tổ chức không? Ai vận hành? | | |
+| **Value** | Người dùng có thật sự cần và sẽ dùng không? |Thấp |Người mới mất ~1 tuần đọc code, chưa có tài liệu thay thế |
+| **Usability** | Người dùng có dùng được, có hiểu và sửa được đầu ra của AI không? |TB |File markdown có thể sửa được, nhưng dễ tin mù nếu không gắn nhãn "Do AI làm" |
+| **Feasibility** | Có đủ dữ liệu, công cụ, kỹ năng để làm không? |TB |Có sữan code và công cụ tương tự, nhưng thiếu phần "vì sao thiết kế", chưa thử trên repo thật |
+| **Viability** | Có hợp chi phí, pháp lý, quy định tổ chức không? Ai vận hành? |Cao |Chưa rõ công ty có cho phép đưa code private cho AI xem không |
 
 ### 8.2. Kết luận
 
-**Quyết định:** Go / Not Yet / No-Go
+**Quyết định:**  Chọn Not Yet
 
-**Lý do:**
+**Lý do:** Value thấp nhưng viability đang cao, chưa rõ công ty có đưa code cho AI xem không. Nhóm cũng chưa thử trên repo thật nên chưa biết độ chính xác
 
-**Nếu Go — pilot nhỏ nhất:**
+**Nếu Go — pilot nhỏ nhất:** Chạy thử trên 1 repo, AI sinh bản nháp, developer duyệt, cho 1 người mới đọc trong 1 tuần
 
-**Nếu Not Yet — cần kiểm chứng gì trước:**
+**Nếu Not Yet — cần kiểm chứng gì trước:** Công ty có cho đưa code lên AI không, ai là người duyệt, thử 1 module xem đúng bao nhiêu % so với code
 
-**Nếu No-Go — nên làm gì thay AI:**
+**Nếu No-Go — nên làm gì thay AI:** Viết tay 1 trang onboard theo template, ghi ADR cho quyết định mới
 
-**Ngưỡng dừng** (nếu sau … mà … thì quay về …):
+**Ngưỡng dừng** (nếu sau … mà … thì quay về …): Nếu sau pilot mà tỷ lệ câu bị sửa hoặc xoá sai trên 30% thì quay về phương án No-Go
 
 ---
 
