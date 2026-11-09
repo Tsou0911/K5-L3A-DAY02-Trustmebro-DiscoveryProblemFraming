@@ -114,9 +114,9 @@ Tổng hợp:
 
 | Công cụ / case / pattern | Link | Giải bước nào trong quy trình? | Điểm mạnh | Khoảng trống / rủi ro | Bài học cho nhóm |
 |---|---|---|---|---|---|
-| | | | | | |
-| | | | | | |
-| | | | | | |
+|DeepWiki(Cognition, nhà làm Devin) |https://deepwiki.com/ |Hiểu bức tranh tổng thể ngay ngày đầu, khi chưa có tài liệu nào. Chỉ cần thay github.com bằng deepwiki.com trong URL là có tóm tắt dự án, tech stack, sơ đồ kiến trúc và hỏi đáp |Repo public miễn phí, repo private cần trả phí |Giữ index luôn mới tốn nhiều compute. Devin cập nhật index theo từng commit cho người dùng trả phí, còn bản miễn phí dùng cách tiết kiệm hơn. Tức là wiki có thể lệch so với code hiện tại. |tài liệu tự sinh giải quyết tốt bài toán “không có gì để đọc”. Nhưng với repo private thì phải trả phí, và độ mới của nội dung là điểm cần kiểm chứng trước khi tin. |
+|Google Code Wiki |https://developers.googleblog.com/introducing-code-wiki-accelerating-your-code-understanding/ |Hiểu tổng thể, giữ tài liệu không bị cũ, và tra cứu từ khái niệm xuống đúng file. |Code Wiki quét toàn bộ codebase và sinh lại tài liệu sau mỗi thay đổi. Có sinh sơ đồ kiến trúc, class và sequence luôn khớp với code hiện tại. |Bản ra mắt chỉ nhận repo public.Các tuyên bố “luôn đúng, không bao giờ cũ” là lời của nhà cung cấp. Chưa thấy đo độ chính xác độc lập. |Hướng đi đúng là tài liệu phải sinh ra từ code, không phụ thuộc người viết. Nhưng với startup có repo private thì phải kiểm tra điều kiện sử dụng trước. |
+|ADR (Architecture Decision Records), giải pháp thủ công |https://www.martinfowler.com/bliki/ArchitectureDecisionRecord.html |Hiểu vì sao hệ thống như hiện tại, phần AI sinh từ code gần như không làm được. |Kỹ thuật này ghi lại các quyết định quan trọng cùng bối cảnh và hệ quả, là tư liệu cho thành viên tương lai. |Cần kỷ luật của cả team và phải bắt đầu ngay từ bây giờ. Nó không cứu được quá khứ chưa ghi chép. |ADR lấp đúng chỗ các công cụ AI để trống, nhưng nó phải được viết bởi người trong cuộc. |
 
 ---
 
