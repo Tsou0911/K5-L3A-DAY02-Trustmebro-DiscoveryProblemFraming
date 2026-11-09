@@ -7,7 +7,7 @@
 
 - Tên nhóm: Trustmebro
 - Thành viên: xem `TEAM.md`
-- Candidate problem được chọn (1 câu):
+- Candidate problem được chọn (1 câu): Dev mới mất nhiều thời gian tìm hiểu hệ thống của công ty vì tài liệu có thể thiếu hoặc không tồn tại. Họ phải tự lần mò đọc mã nguồn hoặc hỏi đồng nghiệp, nhưng câu trả lời không phải lúc nào cũng đầy đủ, khiến quá trình làm việc chậm hơn
 - Quyết định cuối: Go / Not Yet / No-Go
 
 ---
@@ -18,9 +18,9 @@
 
 | # | Người đưa ra | Candidate (Job Story ngắn) | Actor | Bottleneck | Câu hỏi phản biện nhận được (ai hỏi) |
 |---:|---|---|---|---|---|
-| 1 | | | | | |
-| 2 | | | | | |
-| 3 | | | | | |
+| 1 | Lê hữu Toàn | Khi nhận câu hỏi thường gặp từ khách hàng tôi muốn tôi muốn trả lời nhanh và đúng thông tin, để khách hàng sớm đc giải quyết vấn đề | Nhân viên hỗ trợ, khách hàng | lặp lại | |
+| 2 | Lê hữu Toàn | Khi cần thông tin trong nhiều tài liệu nội bộ, tôi muốn tìm được câu trả lời nhanh chóng để không bị mất nhiều thời gian | Nhân viên mới, nhân viên vận hành | Cần đọc, tổng hợp nhiều thông tin | |
+| 3 | Lê hữu Toàn | khi chuẩn bị cải thiện sản phẩm, tôi muốn hiểu khách hàng đang gặp khó khăn gì để đề xuất giải quyết đúng yêu cầu | Nhóm hỗ trợ, nhóm sản phẩm | Cần đọc, tổng hợp nhiều thông tin | |
 | 4 | | | | | |
 | 5 | | | | | |
 | 6 | | | | | |
@@ -44,10 +44,10 @@
 Gốc là **1 outcome**. Nhánh là **opportunity** (nhu cầu, pain), không phải tính năng hay công cụ.
 
 ```text
-OUTCOME: 
-├── Opportunity A: 
-├── Opportunity B: 
-└── Opportunity C: 
+OUTCOME: Giảm thời gian dev mới cần để hiểu công ty và dự án trước khi bắt đầu xử lý công việc
+├── Opportunity A: Dev mới mất thời gian tìm thông tin vì tài liệu nằm rải rác ở nhiều nơi
+├── Opportunity B: Dev mới khó biết tài liệu nào đầy đủ, mới nhất và đáng tin cậy
+└── Opportunity C: Khi thiếu thông tin, dev mới khó biết cần hỏi ai và phải tự lần theo code
 ```
 
 Những ý đã gạch bỏ vì là solution đội lốt opportunity:
@@ -78,16 +78,14 @@ Những ý đã gạch bỏ vì là solution đội lốt opportunity:
 
 | # | Giả định | Loại (Value / Usability / Feasibility / Viability) | Quan trọng (1–5) | Đã có bằng chứng (1–5) | Kiểm chứng trước? |
 |---:|---|---|---:|---:|---|
-| 1 | | | | | |
-| 2 | | | | | |
-| 3 | | | | | |
-| 4 | | | | | |
-| 5 | | | | | |
-| 6 | | | | | |
+| 1 | dev mới thường mất nhiều thời gian để tìm hiểu cấu trúc và các vận hành hệ thống | value | 5 | 2 | có |
+| 2 | thông tin thường được rải trong nhiều tài liệu | value | 4 | 3 | có |
+| 3 | thời gian kéo dài do khó tìm thông tin | value | 4 | 2 | có |
+| 4 | sử dụng ai để tra cứu dữ liệu nội bộ |Viability| 5 | 1 |- |
 
 *Điền 4–6 giả định; xóa dòng thừa.*
 
-Giả định nhóm kiểm chứng trong buổi này:
+Giả định nhóm kiểm chứng trong buổi này:dev mới mất nhiều thời gian tìm hiểu hệ thống vì thông tin nằm rải rác; khó khăn chính là tìm đúng thông tin, và một nơi tra cứu tập trung có thể giúp họ tìm câu trả lời nhanh hơn
 
 ### 3.2. Kiểm chứng
 
