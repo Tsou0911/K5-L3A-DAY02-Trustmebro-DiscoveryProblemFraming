@@ -181,18 +181,18 @@ Phản biện nhận được (từ AI hoặc nhóm khác) và nhóm có đồng
 
 ### 6.1. Ma trận độ mơ hồ × độ phức tạp
 
-Bài của nhóm nằm ở ô:
+Bài của nhóm nằm ở ô: Độ mơ hồ thấp(đầu vào, đầu ra rõ ràng, có thể kiểm chứng) và độ phức tạp cao(AI soạn tài liệu, người trong team duyệt và bổ sung)
 
-Vì sao:
+Vì sao: Vì để hiểu 1 dự án, người mới cần phải đọc rất nhiều file, modules. Phần code này là gì, module này là module nào. 
 
 ### 6.2. So sánh 4 mức
 
 | Mức | Phương án cho bài của nhóm | Đủ khi nào | Rủi ro | Chọn? |
 |---|---|---|---|---|
-| **No AI** (sửa quy trình) | | | | |
-| **Rule** | | | | |
-| **Workflow** | | | | |
-| **Agent** | | | | |
+| **No AI** (sửa quy trình) |Mỗi PR mới phải có 1 README. |Codebase nhỏ, ít thay đổi |Giống vấn đề ban đầu, do không có nên không ai làm |Không chọn |
+| **Rule** |Script kiểm tra cố định các module, endpoint, báo lỗi nếu PR có thay đổi code nhưng tài liệu không đổi |Cần bộ khung thông tin cấu trúc cố định, chính xác |Không giải thích được code, con người vẫn phải tự mở code và đọc |Không chọn |
+| **Workflow** |Mỗi khi merge thì đọc lại repo -> AI tạo bản draft -> Tech Lead approved -> Confirm merge |Cần tài liệu đủ tốt mà không có từ đầu |AI có thể mô tả sai, lệch so với code ban đầu(Cần người kiểm tra) |Chọn |
+| **Agent** |AI agent tự tìm hiểu repo, tự cập nhật tài liệu, có thể tự sử docs |Có sẵn tài liệu nền |Vì được tự quyết định nên con người khó kiểm soát, có thể trả lời sai nhưng rất tự tin vì rất khó để ngăn cản Hallucination |Không chọn lúc này vì chưa có tài liệu sẵn |
 
 **Mức chọn:**
 
@@ -202,17 +202,17 @@ Vì sao:
 
 | Thành phần | Nội dung |
 |---|---|
-| **Prediction** — AI dự đoán / tạo ra gì? | |
-| **Judgment** — con người cân nhắc, quyết định gì? | |
-| **Action** — hành động cuối cùng là gì, ai làm? | |
-| **Outcome** — đo kết quả bằng gì? | |
-| **Input** — AI cần dữ liệu đầu vào gì mỗi lần chạy? Có sẵn không? | |
-| **Feedback** — lấy phản hồi ở đâu để cải thiện? | |
+| **Prediction** — AI dự đoán / tạo ra gì? |Bản nháp tài liệu từ code: tổng quan, kiến trúc, cách chạy, component dùng chung |
+| **Judgment** — con người cân nhắc, quyết định gì? |Người duyệt kiểm tra bản tài liệu xem có đúng với code không, sửa chỗ sai, bổ sung phần AI không biết |
+| **Action** — hành động cuối cùng là gì, ai làm? |Người duyệt sửa và commit vào repo, những người sau có thể đọc và làm theo. Chưa duyệt thì không public |
+| **Outcome** — đo kết quả bằng gì? |Số ngày người mới làm được task đầu tiên |
+| **Input** — AI cần dữ liệu đầu vào gì mỗi lần chạy? Có sẵn không? |Có sẵn: source code, README. |
+| **Feedback** — lấy phản hồi ở đâu để cải thiện? |Người mới sau tuần đầu, chỗ người duyệt phải sửa nhiều nhất, câu hỏi lặp lại. |
 
 ### 6.4. Hai câu hỏi của Google PAIR
 
-- Người dùng muốn **được hỗ trợ (augment)** hay **giao hẳn việc (automate)**? Bằng chứng:
-- AI sai kiểu nào tệ hơn, **báo nhầm** hay **bỏ sót**? Vì sao, và thiết kế đã xử lý thế nào:
+- Người dùng muốn **được hỗ trợ (augment)** hay **giao hẳn việc (automate)**? Bằng chứng: Augment(Theo nhóm đi khảo sát thì người mới phải mất khoảng 1 tuần đọc code, nhưng vẫn cần người cũ giải thích "vì sao thiết kế như vậy" - phần này không nằm trong code nên AI không thể tự làm được)
+- AI sai kiểu nào tệ hơn, **báo nhầm** hay **bỏ sót**? Vì sao, và thiết kế đã xử lý thế nào:Báo nhầm tệ hơn (Vì người mới sẽ tin và làm theo thông tin sai sẽ mất thời gian thêm để debug, mất niềm tin vào tài liệu. Còn thiếu thông tin thì có thể hỏi người cũ)
 
 ---
 
