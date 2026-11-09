@@ -146,7 +146,7 @@ HIỆN TẠI — khoảng 4 tiếng/lần tìm hiểu feature
 | 4 |Dev mới |Mã nguồn, feature liên quan |Hiểu flow và các phần liên đới |Ước tính 90 phút |Phải tự lần theo code |
 | 5 |Dev mới |Câu hỏi chưa rõ |Xác nhận cách hiểu |Ước tính 30 phút |Có thể phải chờ lead |
 
-**Bottleneck chính:**
+**Bottleneck chính:**Bước 4 — dev mới phải tự đọc mã nguồn và lần theo các feature liên quan, mất ước tính 90 phút. Tài liệu có thể thiếu nên khó xác định đúng luồng xử lý
 
 ### 4.2. Quy trình tương lai
 
