@@ -21,9 +21,9 @@
 | 1 | Lê hữu Toàn | Khi nhận câu hỏi thường gặp từ khách hàng tôi muốn tôi muốn trả lời nhanh và đúng thông tin, để khách hàng sớm đc giải quyết vấn đề | Nhân viên hỗ trợ, khách hàng | lặp lại | |
 | 2 | Lê hữu Toàn | Khi cần thông tin trong nhiều tài liệu nội bộ, tôi muốn tìm được câu trả lời nhanh chóng để không bị mất nhiều thời gian | Nhân viên mới, nhân viên vận hành | Cần đọc, tổng hợp nhiều thông tin | |
 | 3 | Lê hữu Toàn | khi chuẩn bị cải thiện sản phẩm, tôi muốn hiểu khách hàng đang gặp khó khăn gì để đề xuất giải quyết đúng yêu cầu | Nhóm hỗ trợ, nhóm sản phẩm | Cần đọc, tổng hợp nhiều thông tin | |
-| 4 | | | | | |
-| 5 | | | | | |
-| 6 | | | | | |
+| 4 | Trần Việt Thịnh |Khi vào dự án mới chưa có tài liệu, tôi muốn có bản mô tả dự án để hiểu nhanh, thay vì đọc code cả tuần |Develop mới |Đọc code để hiểu cấu trúc, ~1 tuần |AI không biết “vì sao thiết kế như vậy”, vậy có đủ giúp người mới không? |
+| 5 | Trần Việt Thịnh |Khi đẩy code lên dev, tôi muốn lỗi convention/format được bắt trước, để Tech Lead chỉ review logic |Developer, Tech Lead |Chờ review và Tech Lead tốn thời gian vào lỗi cơ bản, release 2 tuần thành cả tháng |Linter đã bắt được lỗi format, vậy cần AI để làm gì? |
+| 6 |Trần Việt Thịnh |Khi nhận bug report rời rạc, tôi muốn khoanh vùng nhanh chỗ lỗi trong code, để khỏi lần mò qua nhiều file |Developer, QA |Đọc log và lần theo code qua nhiều file |Con số 1-3 giờ mỗi bug lấy ở đâu ra, thực tế đo được bao nhiêu? |
 | 7 | | | | | |
 | 8 | | | | | |
 | 9 | | | | | |
