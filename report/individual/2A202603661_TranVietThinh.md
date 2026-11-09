@@ -20,18 +20,17 @@ Lăng kính: **Lặp lại** · **Tốn thời gian** · **Cần đọc, tổng 
 
 | # | Lăng kính | Job Story: Khi… tôi muốn… để… | Ai chịu ảnh hưởng? | Dấu hiệu thật (thời gian, tần suất, số người, bằng chứng) |
 |---:|---|---|---|---|
-| 1 | | | | |
-| 2 | | | | |
-| 3 | | | | |
-| 4 | | | | |
-| 5 | | | | |
-| 6 | | | | |
-| 7 | | | | |
-| 8 | | | | |
+| 1 |Pain từ người khác |Khi tôi muốn phát triển tính năng mới và đưa các requirement cho designer, designer muốn rõ ràng vấn đề để không phải hỏi lại |PM, Designer, Developer |Mỗi khi làm thì designer phải hỏi lại 2-3 lần |
+| 2 |Pain từ người khác |Mỗi khi tôi code xong 1 task nào đó, đã đẩy lên môi trường dev, nhưng do mới đi làm nên mắc rất nhiều lỗi cơ bản như (convention code, format code) làm tốn thời gian review của tech lead, thay vào đó tech lead có thể dành thời gian review logic hơn |Developer, Tech Lead | |
+| 3 |Tốn thời gian |Khi tôi gia nhập 1 công ty startup mới, không có tài liệu để tôi đọc về dự án |Developer |Tôi phải đi đọc code base suốt 1 tuần để có thể hiểu, sau đó lúc vào làm phát triển tính năng mới cũng phải đọc lại lần nữa để có thể follow theo code base |
+| 4 |Cần đọc, tổng hợp nhiều thông tin |Khi tôi nhận một bug report từ QA hoặc khách hàng (kèm log, screenshot, mô tả rời rạc), tôi muốn nhanh chóng khoanh vùng được nguyên nhân và đoạn code liên quan, để sửa lỗi mà không phải lần mò qua nhiều file và nhiều nguồn thông tin |Developer, QA |Mỗi bug mất khoảng 1-3 giờ chỉ để tái hiện và xác định đúng chỗ lỗi; xảy ra vài lần mỗi tuần; phải hỏi lại QA để lấy thêm thông tin về bước tái hiện |
+| 5 |Lặp lại |Khi tôi viết một tính năng mới, tôi muốn có sẵn khung code, test và cấu trúc theo đúng convention của dự án, để không phải viết lại phần boilerplate (API call, xử lý lỗi, form, unit test) giống nhau mỗi lần |Developer |Mỗi tính năng tốn khoảng 1-2 giờ cho phần boilerplate; lặp lại ở mọi task; code mỗi người viết một kiểu nên khó đồng nhất |
+| 6 |Tốn thời gian |Khi tôi cần cập nhật tiến độ cho PM (daily standup, báo cáo sprint, ghi chú release), tôi muốn tổng hợp tự động từ commit, PR và task đã làm, để không mất thời gian ngồi nhớ lại và viết tay |Developer, PM |Mỗi ngày mất 10-15 phút cho standup, cuối sprint mất thêm 1-2 giờ viết báo cáo; thông tin hay thiếu hoặc không khớp với thực tế code |
+| 7 |Pain từ người khác |Khi PM hoặc stakeholder đổi yêu cầu giữa sprint hoặc mô tả yêu cầu mơ hồ, tôi muốn có chỗ ghi lại rõ yêu cầu và những thay đổi, để không phải làm lại phần đã xong hoặc tranh cãi về việc “ban đầu yêu cầu là gì” |Developer, PM, Designer |Cứ vài sprint lại có task phải làm lại một phần; mất 0,5-2 ngày công cho mỗi lần đổi yêu cầu; không có tài liệu để đối chiếu |
 
 **Nếu có dùng AI để gợi ý thêm:** ý nào AI gợi ý mà bạn giữ lại, ý nào bỏ và vì sao.
 
--
+-Tôi dùng AI đển tạo ra gợi ý từ 4-7. Theo tôi thì nên giữ lại 4 và bỏ đi 5, 6, 7. Gợi ý 5 thì có pain thật nhưng khá chung chung, mơ hồ. Gợi ý 7 thì trùng với gợi ý 1 của tôi viết. Gợi ý 6 thì hiện nay có nhiều công cụ như Jira có thể tracking được những gì đã làm
 
 ---
 
