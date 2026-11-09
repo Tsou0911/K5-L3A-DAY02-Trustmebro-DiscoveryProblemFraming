@@ -178,16 +178,17 @@ TƯƠNG LAI — mục tiêu dưới 2 tiếng/lần tìm hiểu
 
 | Trường | Nội dung |
 |---|---|
-| **Actor** | Dev mới đọc và tìm hiểu tài liệu project trước khi làm features |
-| **Quy trình** | Các phần đọc & tìm hiểu: Kiến trúc -> Code of conduct -> Convention -> Feature -> Related Feature |
-| **Bottleneck** |  |
-| **Impact** | |
-| **Success Metric** (baseline → target, cách đo) | |
-| **Boundary** (AI không được làm gì; khi nào cần con người kiểm tra — HITL) | |
+| **Actor** | Dev mới dưới 1 năm kinh nghiệm vào dự án, cần tìm hiểu một feature trước khi bắt đầu làm task đầu tiên |
+| **Quy trình** | Nhận task → đọc kiến trúc & quy ước → tìm tài liệu feature → đọc code và lần theo feature liên quan → hỏi đồng nghiệp để xác nhận cách hiểu (5 bước, hiện khoảng 240 phút/feature |
+| **Bottleneck** | Bước 4 (90p) là nút thắt chính: dev phải tự lần theo code để hiểu flow và các phần liên đới, nên khó viết đúng quy ước và sợ ảnh hưởng feature khác. Bước 2-3 (105p) là nút thắt phụ: tài liệu thiếu, khó biết tài liệu nào liên quan |
+| **Impact** | Mỗi feature mất khoảng 4h chỉ để tìm hiểu, trước khi viết dòng code đầu tiên. Khi phải tìm hiểu nhiều feature trong tuần, dev mất 4-8h và phải lùi deadline các việc khác. Bước 5 còn bị chặn chờ lead phản hồi |
+| **Success Metric** | Tra cứu tài liệu (bước 2+3): giảm 105p xuống 50p. Đọc code và lần theo feature (bước 4): giảm 90p xuống 60p. Tổng thời gian tìm hiểu: giảm 240p xuống 155p. Đo bằng bấm giờ từng bước khi dev mới tìm hiểu một feature thật |
+| **Boundary** | AI không được bịa ra cấu trúc khi codebase chưa đủ hoặc thiếu code. Dev mới cần hỏi người hướng dẫn để xác nhận thông tin sau khi đã đọc hiểu |
 
-Phản biện nhận được (từ AI hoặc nhóm khác) và nhóm có đồng ý không:
-
--
+Phản biện nhận được từ AI và nhóm có đồng ý không:
+- Bottleneck đang gom chung các bước lại và mỗi bước khác nhau cần có giải pháp khác nhau.
+- Boundary chưa rõ nghĩa khi xác nhận như thế nào là "không bịa".
+</br>=> Nhóm đồng ý và bổ sung vào v1
 
 ---
 
@@ -234,29 +235,30 @@ Vì sao: Vì để hiểu 1 dự án, người mới cần phải đọc rất n
 
 | Trường | Nội dung |
 |---|---|
-| **Actor** | |
-| **Quy trình** | |
-| **Bottleneck** | |
-| **Impact** | |
-| **Success Metric** (baseline → target, cách đo) | |
-| **Boundary** | |
-| **AI intervention point** | |
-| **Mức chọn** | No AI / Rule / Workflow / Agent |
-| **Rủi ro & người kiểm tra** | |
+| **Actor** | Dev mới dưới 1 năm kinh nghiệm vào dự án , cần tìm hiểu một feature trước khi làm task đầu tiên |
+| **Quy trình** | 5 bước: (1) nhận task, xác định phạm vi → (2) đọc kiến trúc & quy ước → (3) tìm tài liệu feature → (4) đọc code, lần theo feature liên quan → (5) hỏi đồng nghiệp xác nhận. Hiện khoảng 240 phút/feature (ước tính) |
+| **Bottleneck** | Chính: bước 4 (90p), dev phải tự lần theo code để hiểu flow và các phần liên đới, nên khó viết đúng quy ước và dễ ảnh hưởng feature khác </br>Phụ: bước 2-3 (105p), tài liệu có thể thiếu và khó biết tài liệu nào liên quan |
+| **Impact** | Mỗi feature mất khoảng 4h chỉ để tìm hiểu, trước khi viết dòng code đầu tiên. Khi phải tìm hiểu nhiều feature trong tuần, dev mất 4-8h và phải lùi deadline các việc khác. Bước 5 còn bị chặn chờ lead phản hồi |
+| **Success Metric** | Tra cứu tài liệu (bước 2+3): giảm 105p xuống 50p. Đọc code và lần theo feature (bước 4): giảm 90p xuống 60p. Tổng thời gian tìm hiểu: giảm 240p xuống 155p. Đo bằng bấm giờ từng bước khi dev mới tìm hiểu một feature thật |
+| **Boundary** | AI chỉ hỗ trợ đọc hiểu, tóm tắt, chỉ ra file/feature liên quan, đối chiếu coding convention. AI không tự sửa hay merge code. Khi thiếu tài liệu hoặc code, AI phải nói “không đủ thông tin” và chỉ ra phần thiếu, không được bịa cấu trúc. Dev vẫn phải xác nhận với người hướng dẫn. Cần quy định codebase có được đưa lên AI bên ngoài hay không |
+| **AI intervention point** | Bước 2-4: AI tóm tắt kiến trúc và quy ước, tìm tài liệu liên quan, lần theo code để liệt kê flow và các file/feature liên đới. Bước 5: AI gom các điểm chưa chắc thành danh sách câu hỏi cho lead, để dev hỏi một lần thay vì nhiều lần |
+| **Mức chọn** | Workflow (không cần Agent). Các bước cố định: truy xuất tài liệu + code → tóm tắt có dẫn nguồn → liệt kê phần liên đới → đối chiếu convention → ghi chú chỗ thiếu. Boundary không cho AI tự sửa code nên chưa cần AI tự quyết định hành động |
+| **Rủi ro & người kiểm tra** | (1) AI bịa file/flow không tồn tại → dev đối chiếu nguồn được dẫn, mentor/lead xác nhận ở bước 5 </br>(2) AI bỏ sót feature liên đới → reviewer và test regression </br>(3) Dev phụ thuộc, bỏ qua việc đọc code → mentor kiểm tra mức hiểu bằng vài câu hỏi </br>(4) Lộ code công ty → tech lead/bảo mật quyết định phạm vi dữ liệu được dùng |
 
 **Thay đổi so với v0 và lý do:**
 
 | Trường | v0 | v1 | Vì sao đổi |
 |---|---|---|---|
-| | | | |
+| Bottleneck | Gộp 4 vấn đề vào 1 câu (đọc code, format, convention, ảnh hưởng feature khác) | Chốt bước 4 là chính, bước 2-3 là phụ | Nên ưu tiên thứ tự để tìm giải pháp phù hợp cho mỗi bước |
+| Boundary | Chỉ nói AI không bịa | Thêm: AI không sửa/merge code, phải nói “không đủ thông tin”, vấn đề bảo mật | Làm rõ ràng, cụ thể như thế nào là không bịa |
 
-**Tiêu chí đánh giá đầu ra của AI (3–5 tiêu chí):**
+**Tiêu chí đánh giá đầu ra của AI:**
 
 | # | Tiêu chí | Đạt khi | Không đạt khi |
 |---:|---|---|---|
-| 1 | | | |
-| 2 | | | |
-| 3 | | | |
+| 1 | Trung thực khi thiếu thông tin | Khi tài liệu/code không đủ, AI nói rõ “không đủ thông tin” và chỉ ra phần thiếu | AI tự suy đoán hoặc “lấp chỗ trống” bằng cấu trúc nghe hợp lý |
+| 2 | Đúng coding convention | Chỉ ra đúng quy ước áp dụng cho feature và khớp tài liệu quy ước của dự án | Nêu quy ước không có trong dự án, hoặc mâu thuẫn với code mẫu hiện có |
+| 3 | Rút ngắn thời gian thật | Dev đạt target: bước 2-3 ít hơn 50p, bước 4 ít hơn 60p, và vẫn hiểu đúng khi mentor hỏi lại | Thời gian giảm nhưng dev không giải thích được flow, hoặc phải hỏi lại nhiều lần ở bước 5 |
 
 ---
 
