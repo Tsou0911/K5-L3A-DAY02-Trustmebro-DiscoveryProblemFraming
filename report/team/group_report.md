@@ -21,15 +21,12 @@
 | 1 | Lê hữu Toàn | Khi nhận câu hỏi thường gặp từ khách hàng tôi muốn tôi muốn trả lời nhanh và đúng thông tin, để khách hàng sớm đc giải quyết vấn đề | Nhân viên hỗ trợ, khách hàng | lặp lại | |
 | 2 | Lê hữu Toàn | Khi cần thông tin trong nhiều tài liệu nội bộ, tôi muốn tìm được câu trả lời nhanh chóng để không bị mất nhiều thời gian | Nhân viên mới, nhân viên vận hành | Cần đọc, tổng hợp nhiều thông tin | |
 | 3 | Lê hữu Toàn | khi chuẩn bị cải thiện sản phẩm, tôi muốn hiểu khách hàng đang gặp khó khăn gì để đề xuất giải quyết đúng yêu cầu | Nhóm hỗ trợ, nhóm sản phẩm | Cần đọc, tổng hợp nhiều thông tin | |
-| 4 | | | | | |
-| 5 | | | | | |
-| 6 | | | | | |
+| 4 | Vũ Lê Đức | Trong khoảng 2 tuần đầu tại nơi thuê, tôi muốn tìm quán ăn hợp ngân sách và gần chỗ ở, để không chi vượt kỳ vọng hay phải đi xa | Sinh viên | Thiếu thông tin giá và khoảng cách thật khi chọn | (Lê Hữu Toàn) Tại sao không sử dụng Google Map để tìm kiếm? |
+| 5 | Vũ Lê Đức | Khi tới 9h sáng Thứ Ba, Non-tech Manager muốn tổng hợp tiến độ của Dev Team từ tất cả file report, để báo cáo lên Technical Manager đầy đủ và đúng giờ | Non-tech Manager, Technical Manager | Chờ dev bổ sung, khoảng 15p và trong lúc report phải check nhiều file | (Trần Viết Thịnh) Mốc thời gian chưa rõ là khi nào thì Non-tech Manager biết để tôngt hợp tiến độ của Dev Team? |
+| 6 | Vũ Lê Đức | Khi cập nhật tiến độ, tôi muốn chỉ nhập một lần, để không phải viết lại ở Jira, file report và chat, và báo cáo không bị thiếu hoặc lệch | Dev, Non-Tech Manager | Cùng một lúc phải nhập 3 nơi để file report | |
 | 7 | | | | | |
 | 8 | | | | | |
 | 9 | | | | | |
-| 10 | | | | | |
-| 11 | | | | | |
-| 12 | | | | | |
 
 ### 2.2. Cluster
 
